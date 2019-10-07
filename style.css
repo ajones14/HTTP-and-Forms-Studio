@@ -1,0 +1,40 @@
+.label {
+    display: block;
+    margin: 5px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.label input {
+    visibility: hidden;
+}
+
+.bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #988de2;
+    border-radius: 50%;
+}
+
+.label input:checked ~ .bubble {
+    background-color: #4b427a;
+}
+
+button {
+    display: inline-block;
+    background-color: #4b427a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-color: #4b427a;
+    border: solid;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: #988de2;
+}
